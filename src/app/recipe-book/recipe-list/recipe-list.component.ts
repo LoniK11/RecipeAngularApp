@@ -22,7 +22,7 @@ export class RecipeListComponent implements AfterViewChecked{
   @Input() newRecipeItem:RecipeListModel = {name:'',description:'',imageUrl:''};
 
   addNewUser(){
-    this.addNew.emit({name:'Valon',surname:'Kulici'});
+    this.addNew.emit({name:'',surname:''});
   }
 
   addNewRecipeItem(){
