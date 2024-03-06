@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    width: 40vw;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 20px 0;
+    border: 1px solid rgb(50,50,50);
+    margin-left: calc((100% - 40vw) / 2);
+}
+
+div.container form {
+    width: 25vw;
+    position: absolute;
+    margin-left: 7.5vw;
+}
+
+div.container form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(50,50,50);
+    padding: 5px 7.5px;
+}
+
+div.container form textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+    resize: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(50,50,50);
+}
+
+div.container form textarea:focus {
+    outline: none;
+}
+
+div.container form input:focus {
+    outline: none;
+}
+
+div.container form label {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+div.container form button {
+    width: 100px;
+    height: 30px;
+    margin-left: calc((25vw - 100px) / 2);
+    background-color: #5cb85c;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+}
+
+div.container form input[type="file"] {
+    display: none;
+}
+
+div.container form p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -15px;
+    word-wrap: break-word;
+}
+
+div.container form label#imageInput {
+    width: 130px;
+    height: 30px;
+    border: 1px solid rgb(50,50,50);
+    margin-left: calc((25vw - 130px) / 2);
+    text-align: center;
+    padding: 3.5px;
+    border-radius: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

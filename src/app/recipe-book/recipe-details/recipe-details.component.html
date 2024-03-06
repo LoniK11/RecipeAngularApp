@@ -1,0 +1,19 @@
+
+<div class="container" style="user-select: none;">
+    <form #form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" autocomplete="off" [(ngModel)]="name"><br><br>
+
+        <label for="description">Description</label><br>
+        <textarea name="description" id="description" autocomplete="off" [(ngModel)]="description"></textarea><br><br>
+
+        <p>{{ imageName }}</p><br>
+        <label for="imageInputs" id="imageInput">Image</label><br>
+        <input type="file" id="imageInputs" (input)="inputImage($event)"><br><br>
+
+        <button type="submit" (click)="onSubmit()">Submit</button>
+    </form>
+</div>
+
+
+<ng-content></ng-content>

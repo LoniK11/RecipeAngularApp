@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="col-md-5">
+        <app-recipe-list (addNew)="onAddNewClicked($event)" [newRecipeItem]="newAddedRecipeItem"></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipe-details (recipeItem)="getAddedRecipeItem($event)">
+            <div class="container-fluid">
+                <div class="col-md-6">
+                    {{ name.name }} - {{ name.surname }}
+                </div>
+            </div>
+            
+        </app-recipe-details>
+    </div>
+</div>
+
+
+<!-- Krijo nje forme me 3 inpute dhe nje buton  te recipe details 
+    te kalohen ne recipe book dhe do te shtohen ne listen e recipe listes-->
